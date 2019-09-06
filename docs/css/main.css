@@ -1,0 +1,191 @@
+/*
+ * Box-sizing-model
+ */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+ * Responsive images
+*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*
+ * Cursor change on hover on Buttons
+*/
+input[type="submit"] {
+  cursor: pointer;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+.clear {
+  clear: both;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+html {
+  font-size: 10px;
+  line-height: 1.4;
+}
+body {
+  font-size: 1.6rem;
+  /* 10px * 1.6 = 16px */
+  font-family: 'Noto Sans';
+}
+p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #777;
+}
+.block {
+  background: #FFDB4C;
+  padding: 20px;
+  color: #000;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.block-bg-culture {
+  background-color: #e9e9e9;
+  padding: 30px 0;
+}
+.block-bg-do {
+  background-color: #e9e9e9;
+  padding: 30px 0;
+}
+.block-bg-partner {
+  background-color: #fff;
+  padding: 30px 0;
+}
+.block-bg-contact {
+  background-color: #7cc576;
+  padding: 30px 0;
+}
+.block-bg-footer {
+  background-color: #222222;
+  padding: 30px 0;
+}
+.block-bg-copyright {
+  background-color: #fff;
+  padding: 30px 0;
+}
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
+/* Medium Devices, Desktops - adaptive styles bofore 992px */
+/* Small Devices, Tablets - adaptive styles bofore 768px */
+/* Extra Small Devices, Phones - adaptive styles bofore 480px */
+/* Custom, iPhone Retina - adaptive styles bofore 320px */
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.header__nav-list-item {
+  display: inline-block;
+  margin-right: 35px;
+}
+.header__nav-list-item:last-child {
+  margin-right: 0;
+}
+.header__nav-list-item a {
+  font-family: 'Montserrat', sans-serif;
+  color: #222222;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-decoration: none;
+}
+.header__content-title {
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.header__content-title h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+}
+.titel-wraper {
+  background-image: url(../img/bg/bg-headder.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.header__content-subtitle {
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.button {
+  display: inline-block;
+  color: #fff;
+  background-color: #7cc576;
+  margin-top: 60px;
+  padding: 20px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
