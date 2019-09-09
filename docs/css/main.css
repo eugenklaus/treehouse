@@ -157,7 +157,7 @@ p {
   transition: all 0.2s ease-in;
 }
 .header__nav-list-item a:hover {
-  color: #7cc576;
+  color: #222;
 }
 .header__content-title {
   background-color: rgba(0, 0, 0, 0.7);
@@ -186,10 +186,11 @@ p {
 }
 .button {
   display: inline-block;
+  font-family: 'Montserrat', sans-serif;
   color: #fff;
   background-color: #7cc576;
   margin-top: 54px;
-  padding: 18px 36px;
+  padding: 19px 36px;
   border-radius: 50px;
   font-size: 16px;
   font-weight: 700;
@@ -198,8 +199,8 @@ p {
 }
 .button:hover {
   text-decoration: none;
-  color: #fff;
-  background-color: #222;
+  color: #222;
+  background-color: #fff;
 }
 .service__title {
   font-family: 'Montserrat', sans-serif;
@@ -249,4 +250,10 @@ p {
 }
 .row--text-center {
   text-align: center;
+}
+.background {
+  background-image: url(../img/bg/bg-section.jpg);
+}
+.for-you__image {
+  background-color: #e9e9e9;
 }
