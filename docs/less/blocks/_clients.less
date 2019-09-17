@@ -1,0 +1,72 @@
+.clients__testimonial {
+  display: flex;
+  align-items: center;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+
+  &--position-right {
+    justify-content: flex-end;
+  }
+}
+
+.clients__image {
+  background-color: #f9f9f9;
+  width: 227px;
+  height: 227px;
+
+  border-radius: 150px;
+
+  margin-right: 45px;
+
+  &--margin-left {
+    margin-left: 45px;
+  }
+}
+
+.clients__text {
+  background-color: #f9f9f9;
+  color: #777;
+  font-family: "Roboto Slab", serif;
+  font-size: 22px;
+
+  padding: 32px 50px;
+}
+
+.clients__text--triangle-left::before {
+    content: "";
+    position: absolute;
+
+    top: 99px;
+    left: 251px;
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 21px 12px 0;
+    border-color: transparent #f9f9f9 transparent transparent;
+}
+
+.clients__text--triangle-right::before {
+    content: "";
+    position: absolute;
+
+    top: 100px;
+    right: 298px;
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 20px;
+    border-color: transparent transparent transparent #f9f9f9;
+  }
+
+.clients__name {
+  color: #7cc576;
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+
+  text-align: center;
+  margin-top: 15px;
+}

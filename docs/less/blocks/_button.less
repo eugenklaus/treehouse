@@ -17,4 +17,62 @@
         color: #222;
         background-color: #fff;
     }
+
+    
+
+}
+
+.button--no-bg {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    color: #7cc576;
+    
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in;
+
+    margin-top: 19px;
+
+    &::after {
+        content: "";
+        background-image: url(../img/icons/arrow-right-green.svg);
+        width: 14px;
+        height: 11px;
+        position: absolute;
+        bottom: 7px;
+        left: 137px;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: #222;
+    }
+}
+
+.button--contact {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in;
+
+    border: 3px solid #fff;
+    border-radius: 4px;
+
+    margin-top: 19px;
+
+    padding: 10px 27px;
+
+    &:hover {
+        text-decoration: none;
+        color: #7cc576;
+        background-color: #fff;
+        border-radius: 4px;
+
+        padding: 10px 27px;   
+    }
 }
