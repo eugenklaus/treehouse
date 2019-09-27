@@ -78,6 +78,8 @@ html,
 body {
   height: 100%;
   min-width: 320px;
+  padding-left: 0;
+  padding-right: 0;
 }
 @media (min-width: 992px) {
   .container {
@@ -157,7 +159,7 @@ body {
   transition: all 0.2s ease-in;
   border: 3px solid #fff;
   border-radius: 4px;
-  margin-top: 19px;
+  margin-top: 24px;
   padding: 10px 27px;
 }
 .button--contact:hover {
@@ -213,16 +215,20 @@ body {
 }
 .heading--color-white {
   font-family: "Montserrat", sans-serif;
-  text-align: center;
   color: #fff;
-  font-size: 40px;
-  line-height: 1.8;
+  font-size: 39px;
+  line-height: 1.2;
   letter-spacing: -0.75px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-bottom: -8px;
+}
+@media (max-width: 992px) {
+  .heading--color-white {
+    font-size: 30px;
+    line-height: 1.2;
+  }
 }
 @media (max-width: 767px) {
   .heading--color-white {
@@ -483,7 +489,7 @@ body {
 }
 .benefit-block {
   margin-top: 85px;
-  padding: 0;
+  padding: 0 10px;
 }
 @media (max-width: 767px) {
   .benefit-block {
@@ -714,8 +720,11 @@ body {
   font-weight: 400;
   color: #cccccc;
 }
-.value {
+.value__wrapper {
   background-color: #f9f9f9;
+}
+.value__blocks {
+  padding: 0;
 }
 .value-block__image {
   margin-top: 84px;
@@ -741,17 +750,25 @@ body {
   font-weight: 400;
   color: #777;
 }
-.contact {
+.contact__wrapper {
   background-color: #7cc576;
-  text-align: center;
-  padding-top: 48px;
+  padding-top: 63px;
   padding-bottom: 70px;
 }
-@media (max-width: 767px) {
-  .contact {
-    padding-top: 45px;
-    padding-bottom: 55px;
+@media (max-width: 992px) {
+  .contact__wrapper {
+    padding-top: 43px;
+    padding-bottom: 50px;
   }
+}
+@media (max-width: 767px) {
+  .contact__wrapper {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+.contact {
+  text-align: center;
 }
 .partner {
   background-color: #fff;
@@ -771,6 +788,11 @@ body {
 }
 .partner__image:last-child {
   margin-right: 0;
+}
+@media (max-width: 992px) {
+  .partner__image {
+    margin-right: 15px;
+  }
 }
 @media (max-width: 767px) {
   .partner__image {
