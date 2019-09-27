@@ -483,6 +483,7 @@ body {
 }
 .benefit-block {
   margin-top: 85px;
+  padding: 0;
 }
 @media (max-width: 767px) {
   .benefit-block {
