@@ -1,32 +1,34 @@
 .footer-wrapper {
     background-color: #222222;
-
 }
 
 .footer {
     padding-top: 60px;
     padding-bottom: 39px;
+
+    @media (max-width: 767px) {
+        padding-top: 45px;
+        padding-bottom: 10px;
+    }
 }
 
 .footer__heading {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #fff;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
-    line-height: 1.200;
+    line-height: 1.2;
 
     margin-bottom: 20px;
 }
 
 .footer__item {
-    
 }
 
 .footer__item-location {
     display: flex;
-    
-    
+
     img {
         margin-right: 10px;
         width: 23px;
@@ -34,23 +36,20 @@
 
         margin-top: 5px;
     }
-    
 }
 
 .footer__item-text {
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto Slab", serif;
     color: #ececec;
     font-size: 16px;
-    
+
     &--hover {
-        
         &:hover {
             color: #7cc576;
             text-decoration: none;
             transition: all 0.2s ease-in;
             cursor: pointer;
         }
-
     }
 
     &--l-h-22px {
@@ -63,13 +62,10 @@
     align-items: center;
     margin-top: 10px;
 
-
-
     img {
         margin-right: 10px;
         width: 20px;
         height: 31px;
-
     }
 }
 
@@ -78,13 +74,10 @@
     align-items: center;
     margin-top: 20px;
 
-
-
     img {
         margin-right: 10px;
         width: 25px;
         height: 16px;
-
     }
 
     a {
@@ -99,13 +92,10 @@
     margin-top: 18px;
 
     img {
-        
         margin-right: 10px;
         width: 26px;
         height: 21px;
-        
     }
-
 
     &:last-child {
         padding-left: 5px;
@@ -114,7 +104,6 @@
             width: 18px;
             height: 21px;
             margin-right: 13px;
-
         }
     }
 }
@@ -124,27 +113,21 @@
     margin-top: 18px;
 
     img {
-        
         margin-right: 10px;
         width: 24px;
         height: 18px;
-        
     }
-
 
     &:last-child {
         padding-left: 5px;
 
         img {
-        
             margin-right: 13px;
-
         }
     }
 }
 
 .footer__item-latest-twitt {
-    
     &:hover {
         color: #7cc576;
         text-decoration: none;
@@ -154,7 +137,7 @@
 }
 
 .footer__item-latest-tag {
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto Slab", serif;
     color: #ececec;
     font-size: 16px;
     font-weight: 700;

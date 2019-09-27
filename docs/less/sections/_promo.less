@@ -3,15 +3,20 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    width: 100%;
 }
 
 .promo {
     background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
-    
-    padding-top: 84px;
-    padding-bottom: 120px; 
 
+    padding-top: 84px;
+    padding-bottom: 120px;
+
+    @media (max-width: 767px) {
+        padding-top: 52px;
+        padding-bottom: 60px;
+    }
 }
 
 // .promo__title {
@@ -21,7 +26,7 @@
 //     font-weight: 700;
 //     text-transform: uppercase;
 //     line-height: 1.200;
-//     letter-spacing: -0.75px;   
+//     letter-spacing: -0.75px;
 // }
 
 // .promo__subtitle {

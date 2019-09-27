@@ -1,8 +1,13 @@
 .partner {
-	background-color: #fff;
+    background-color: #fff;
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
+
+    @media (max-width: 767px) {
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
 }
 
 .partner__image {
@@ -11,5 +16,14 @@
 
     &:last-child {
         margin-right: 0;
+    }
+
+    @media (max-width: 767px) {
+        display: block;
+
+        margin: 0;
+        padding: 0;
+
+        padding-top: 40px;
     }
 }

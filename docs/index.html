@@ -13,6 +13,7 @@
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
 	<!-- // Fonts -->
 	
 	<!-- Syles -->
@@ -44,7 +45,10 @@
 				<img src="img/images/logo.png" alt="logo">
 			</div>
 			<nav class="header__nav">
-				<ul class="header__nav-list">
+				<div class="header__nav-togle" id="pull">
+					<a class="header__nav-togle-bars"><i class="fa fa-bars fa" aria-hidden="true"></i></a>
+				</div>
+				<ul class="header__nav-list" id="mobile-nav">
 					<li class="header__nav-list-item"><a href="#">Home</a></li>
 					<li class="header__nav-list-item"><a href="#">About</a></li>
 					<li class="header__nav-list-item"><a href="#">Blog</a></li>
@@ -96,8 +100,8 @@
 				</div>
 				
 				<div class="benefit-block__text">
-					Proin iaculis purus consequat sem cure 
-					digni ssim. Donec porttitora entum suscipit 
+					Proin iaculis purus consequat sem cure<br> 
+					digni ssim. Donec porttitora entum suscipit<br>  
 					aenean rhoncus posuere odio in tincidunt.
 				</div>
 			</div>
@@ -115,15 +119,15 @@
 				</div>
 				
 				<div class="benefit-block__text">
-					Proin iaculis purus consequat sem cure 
-					digni ssim. Donec porttitora entum suscipit 
+					Proin iaculis purus consequat sem cure<br>  
+					digni ssim. Donec porttitora entum suscipit<br>  
 					aenean rhoncus posuere odio in tincidunt.
 				</div>
 			</div>
 		<!-- // Benefit Box 2 -->
 
 		<!-- Benefit Box 3 -->
-			<div class="col-lg-4 benefit-block">
+			<div class="col-lg-4 benefit-block benefit-block--p-r-0">
 
 				<div class="benefit-block__image">
 					<img src="img/icons/icon-graph.png" alt="graph">
@@ -134,8 +138,8 @@
 				</div>
 				
 				<div class="benefit-block__text">
-					Proin iaculis purus consequat sem cure 
-					digni ssim. Donec porttitora entum suscipit 
+					Proin iaculis purus consequat sem cure<br>  
+					digni ssim. Donec porttitora entum suscipit<br>  
 					aenean rhoncus posuere odio in tincidunt.
 				</div>
 			</div>
@@ -154,54 +158,54 @@
 
 		<div class="relax__content">
 			<div class="relax__content-overlay">
-					<div class="relax__content-wrapper">
-						<h2 class="relax__content-title">Just relax <span class="relax__content-title--latter-color">&</span><br> 
-							let us do the heavy lifting
-						</h2>
-						
-						<div class="relax__content-description">
-							Proin iaculis purus consequat sem cure  digni ssim. Donec<br> 
-							porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.
-						</div>
-						
-						<div class="relax__content-bullets">
-							
-							<div class="relax__content-bullets-image">
-								<img src="img/icons/checkmark.png" alt="check">
-							</div>
-
-							<div class="relax__content-bullets-text">
-								Initial Setup & Customizations
-							</div>
-							
-						</div>
-
-						<div class="relax__content-bullets">
-							
-							<div class="relax__content-bullets-image">
-								<img src="img/icons/checkmark.png" alt="check">
-							</div>
-
-							<div class="relax__content-bullets-text">
-								Regular Updates
-							</div>
-							
-						</div>
-
-						<div class="relax__content-bullets">
-							
-							<div class="relax__content-bullets-image">
-								<img src="img/icons/checkmark.png" alt="check">
-							</div>
-
-							<div class="relax__content-bullets-text">
-								Round The Clock Support
-							</div>
-							
-						</div>
-						
-						<a href="#" class="button">Learn more</a>
+				<div class="relax__content-wrapper">
+					<h2 class="relax__content-title">Just relax <span class="relax__content-title--latter-color">&</span><br> 
+						let us do the heavy lifting
+					</h2>
+					
+					<div class="relax__content-description">
+						Proin iaculis purus consequat sem cure  digni ssim. Donec<br> 
+						porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.
 					</div>
+					
+					<div class="relax__content-bullets">
+						
+						<div class="relax__content-bullets-image">
+							<img src="img/icons/checkmark.png" alt="check">
+						</div>
+
+						<div class="relax__content-bullets-text">
+							Initial Setup & Customizations
+						</div>
+						
+					</div>
+
+					<div class="relax__content-bullets">
+						
+						<div class="relax__content-bullets-image">
+							<img src="img/icons/checkmark.png" alt="check">
+						</div>
+
+						<div class="relax__content-bullets-text">
+							Regular Updates
+						</div>
+						
+					</div>
+
+					<div class="relax__content-bullets">
+						
+						<div class="relax__content-bullets-image">
+							<img src="img/icons/checkmark.png" alt="check">
+						</div>
+
+						<div class="relax__content-bullets-text">
+							Round The Clock Support
+						</div>
+						
+					</div>
+					
+					<a href="#" class="button">Learn more</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -209,6 +213,10 @@
 
 	<!-- Latest Projects -->
 	<div class="projects-wrapper">
+
+		<div class="project__image">
+			<img src="img/images/ipad.png" alt="Ipad">
+		</div>
 		
 		<div class="container section">
 
@@ -307,15 +315,6 @@
 					<a href="#" class="button--no-bg">View Details</a>
 				</div>
 				<!-- // Projects Content Box -->
-
-
-				<!-- Projects Image Box -->
-				<div class="col-lg-6">
-					<div class="project__image">
-						<img src="img/images/ipad.png" alt="Ipad">
-					</div>
-				</div>
-				<!-- // Projects Image Box -->
 			</div>
 		</div>
 	</div>
@@ -448,21 +447,23 @@
 
 	<!-- Partner -->
 	<div class="partner">
-				
-		<div class="partner__image">
-			<img src="img/images/envato.jpg" alt="envato">
-		</div>
+			
+		<div class="partner__block-wrapper">
+			<div class="partner__image">
+				<img src="img/images/envato.jpg" alt="envato">
+			</div>
 
-		<div class="partner__image">
-			<img src="img/images/wordpress.jpg" alt="wordpress">
-		</div>
+			<div class="partner__image">
+				<img src="img/images/wordpress.jpg" alt="wordpress">
+			</div>
 
-		<div class="partner__image">
-			<img src="img/images/tuts+.jpg" alt="tuts+">
-		</div>
+			<div class="partner__image">
+				<img src="img/images/tuts+.jpg" alt="tuts+">
+			</div>
 
-		<div class="partner__image">
-			<img src="img/images/microlancer.jpg" alt="microlancer">
+			<div class="partner__image">
+				<img src="img/images/microlancer.jpg" alt="microlancer">
+			</div>
 		</div>
 
 	</div>
@@ -472,6 +473,8 @@
 	<div class="footer-wrapper">
 		<div class="container">
 			<div class="row">
+
+				<!-- Contact Us Block -->
 				<div class="col-lg-4 footer">
 					<div class="footer__heading">
 						Contact Us
@@ -507,9 +510,10 @@
 							</div>
 						</div>
 					</div>
-					
 				</div>
+				<!-- // Contact Us Block -->
 
+				<!-- Latest Posts Block -->
 				<div class="col-lg-4 footer">
 					<div class="footer__heading">
 						Latest Posts
@@ -561,9 +565,10 @@
 							</a>
 						</div>
 					</div>
-					
 				</div>
+				<!-- // Latest Posts Block -->
 
+				<!-- Latest Tweets Block -->
 				<div class="col-lg-4 footer">
 					<div class="footer__heading">
 						Latest Tweets
@@ -610,10 +615,9 @@
 
 							</div>
 						</div>
-
 					</div>
-					
 				</div>
+				<!-- // Latest Tweets -->
 			</div>
 		</div>>
 	</div>
@@ -625,39 +629,35 @@
 		
 		<p class="copyright__text">© Copyright 2019 eugenklaus.de</p>
 		
-		
 		<div class="copyright__social">
 			
 			<div class="copyright__social-icon">
 				<div class="copyright__social-icon-twitter">
-					<img src="img/icons/twitter.png" alt="twitter">
+					<a href="#"><img src="img/icons/twitter.png" alt="twitter"></a>
 				</div>
 			</div>
 	
 			<div class="copyright__social-icon">
 				<div class="copyright__social-icon-facebook">
-					<img src="img/icons/facebook.png" alt="facebook">
+					<a href="#"><img src="img/icons/facebook.png" alt="facebook"></a>
 				</div>
 			</div>
 		
 			<div class="copyright__social-icon">
 				<div class="copyright__social-icon-pinterest">
-					<img src="img/icons/pinterest.png" alt="pinterest">
+					<a href="#"><img src="img/icons/pinterest.png" alt="pinterest"></a>
 				</div>
 			</div>
 
 			<div class="copyright__social-icon">
 				<div class="copyright__social-icon-google">
-					<img src="img/icons/google.png" alt="google">
+					<a href="#"><img src="img/icons/google.png" alt="google"></a>
 				</div>
 			</div>
 			
 		</div>
-		
 	</div>
 	<!-- // Copyright -->
-
-
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>

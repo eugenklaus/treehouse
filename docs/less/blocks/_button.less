@@ -1,12 +1,12 @@
 .button {
     display: inline-block;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #fff;
     background-color: #7cc576;
     margin-top: 54px;
     padding: 19px 36px;
     border-radius: 50px;
-    
+
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -18,15 +18,18 @@
         background-color: #fff;
     }
 
-    
-
+    @media (max-width: 767px) {
+        font-size: 14px;
+        margin-top: 44px;
+    }
 }
 
 .button--no-bg {
     display: inline-block;
-    font-family: 'Montserrat', sans-serif;
+    position: relative;
+
+    font-family: "Montserrat", sans-serif;
     color: #7cc576;
-    
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -39,9 +42,15 @@
         background-image: url(../img/icons/arrow-right-green.svg);
         width: 14px;
         height: 11px;
+
         position: absolute;
         bottom: 7px;
-        left: 137px;
+        right: -20px;
+
+        &:hover {
+            background-image: url(../img/icons/arrow-right-black.svg);
+            background-repeat: no-repeat;
+        }
     }
 
     &:hover {
@@ -52,9 +61,9 @@
 
 .button--contact {
     display: inline-block;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #fff;
-    
+
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -64,7 +73,6 @@
     border-radius: 4px;
 
     margin-top: 19px;
-
     padding: 10px 27px;
 
     &:hover {
@@ -73,6 +81,11 @@
         background-color: #fff;
         border-radius: 4px;
 
-        padding: 10px 27px;   
+        padding: 10px 27px;
+    }
+
+    @media (max-width: 767px) {
+        margin-top: 40px;
+        padding: 10px 27px;
     }
 }
