@@ -44,6 +44,7 @@
 }
 
 .copyright__social-icon-twitter {
+    position: relative;
     background-color: #222;
     width: 41px;
     height: 41px;
@@ -55,12 +56,22 @@
         padding-left: 11px;
     }
 
+    &::before {
+        content: url(../img/icons/twitter.png);
+        position: absolute;
+        top: 12px;
+        left: 11px;
+    }
+
     &:hover {
         background-color: #00aced;
     }
 }
 
+
+
 .copyright__social-icon-facebook {
+    position: relative;
     background-color: #222;
     width: 41px;
     height: 41px;
@@ -72,12 +83,20 @@
         padding-left: 15px;
     }
 
+    &::before {
+        content: url(../img/icons/facebook.png);
+        position: absolute;
+        top: 11px;
+        left: 15px;
+    }
+
     &:hover {
         background-color: #3b5998;
     }
 }
 
 .copyright__social-icon-pinterest {
+    position: relative;
     background-color: #222;
     width: 41px;
     height: 41px;
@@ -89,12 +108,20 @@
         padding-left: 12px;
     }
 
+    &::before {
+        content: url(../img/icons/pinterest.png);
+        position: absolute;
+        top: 10px;
+        left: 12px;
+    }
+
     &:hover {
         background-color: #cb2028;
     }
 }
 
 .copyright__social-icon-google {
+    position: relative;
     background-color: #222;
     width: 41px;
     height: 41px;
@@ -104,6 +131,13 @@
     img {
         padding-top: 12px;
         padding-left: 13px;
+    }
+
+    &::before {
+        content: url(../img/icons/google.png);
+        position: absolute;
+        top: 12px;
+        left: 14px;
     }
 
     &:hover {

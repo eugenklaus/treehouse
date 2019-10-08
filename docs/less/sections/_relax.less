@@ -1,6 +1,6 @@
 .relax__wrapper {
     display: flex;
-    height: 620px;
+    min-height: 620px;
     background-color: #e9e9e9;
     position: relative;
     justify-content: flex-end;
@@ -13,9 +13,9 @@
 .relax__image {
     z-index: 1;
     position: absolute;
-    top: 101px;
+    top: 50%;
     left: 30%;
-    transform: translateX(-193px);
+    transform: translate(-50%, -50%);
 
     @media (max-width: 767px) {
         display: none;
@@ -40,6 +40,9 @@
 .relax__content-wrapper {
     padding-left: 100px;
     padding-top: 88px;
+    padding-bottom: 100px;
+
+    max-width: 800px;
     
     position: relative;
 
@@ -75,19 +78,22 @@
     margin: 0;
     padding: 0;
 
+    span {
+        color: #7cc576;
+    }
+
     @media (max-width: 767px) {
         font-size: 32px;
     }
-}
 
-.relax__content-title--latter-color {
-    color: #7cc576;
 }
 
 .relax__content-description {
     font-family: "Roboto Slab", serif;
     font-size: 16px;
     font-weight: 400;
+    letter-spacing: -0.5px;
+
     color: #cccccc;
 
     margin: 0;
@@ -95,17 +101,29 @@
     margin-top: 29px;
     margin-bottom: 23px;
 
+    max-width: 520px;
+
     @media (max-width: 767px) {
         font-size: 15px;
     }
 }
 
+.relax__bullets {
+    margin: 0;
+    padding: 0;
+}
+
 .relax__content-bullets {
+    // list-style-image: url(../img/icons/checkmark.png);
+    background-image: url(../img/icons/checkmark.png);
+    background-repeat: no-repeat;
+
     color: #fff;
     display: flex;
     align-items: center;
 
     margin-top: 10px;
+    padding-left: 52px;
 }
 
 .relax__content-bullets-image {
@@ -117,4 +135,7 @@
     font-size: 16px;
     font-weight: 400;
     color: #cccccc;
+    line-height: 2;
+    letter-spacing: -0.5px;
+
 }

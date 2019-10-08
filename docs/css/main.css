@@ -114,10 +114,12 @@ body {
   text-transform: uppercase;
   transition: all 0.2s ease-in;
 }
-.button:hover {
+.button:hover,
+.button:focus {
   text-decoration: none;
   color: #222;
   background-color: #fff;
+  outline: none;
 }
 @media (max-width: 767px) {
   .button {
@@ -144,14 +146,23 @@ body {
   position: absolute;
   bottom: 7px;
   right: -20px;
+  transition: all 0.2s ease-in;
 }
-.button--no-bg::after:hover {
-  background-image: url(../img/icons/arrow-right-black.svg);
-  background-repeat: no-repeat;
-}
-.button--no-bg:hover {
+.button--no-bg:hover,
+.button--no-bg :focus {
   text-decoration: none;
   color: #222;
+  outline: none;
+}
+.button--no-bg:hover::after,
+.button--no-bg :focus::after {
+  content: "";
+  background-image: url(../img/icons/arrow-right-black.svg);
+  width: 14px;
+  height: 11px;
+  position: absolute;
+  bottom: 7px;
+  right: -20px;
 }
 .button--contact {
   display: inline-block;
@@ -166,11 +177,13 @@ body {
   margin-top: 24px;
   padding: 10px 27px;
 }
-.button--contact:hover {
+.button--contact:hover,
+.button--contact:focus {
   text-decoration: none;
   color: #7cc576;
   background-color: #fff;
   border-radius: 4px;
+  outline: none;
   padding: 10px 27px;
 }
 @media (max-width: 767px) {
@@ -220,9 +233,9 @@ body {
 .heading--color-white {
   font-family: "Montserrat", sans-serif;
   color: #fff;
-  font-size: 39px;
+  font-size: 40px;
   line-height: 1.2;
-  letter-spacing: -0.75px;
+  letter-spacing: -1.75px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
@@ -303,6 +316,12 @@ body {
   .clients__testimonial {
     flex-direction: column;
   }
+  .clients__testimonial--reverse {
+    flex-direction: column-reverse;
+  }
+}
+.clients__testimonial-wrapper--reverse {
+  flex-direction: column-reverse;
 }
 .clients__image {
   background-color: #f9f9f9;
@@ -542,7 +561,7 @@ body {
 }
 .benefit-block {
   margin-top: 85px;
-  padding: 0 10px;
+  padding: 0 25px;
 }
 @media (max-width: 767px) {
   .benefit-block {
@@ -558,6 +577,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.8;
+  letter-spacing: -0.5px;
   text-transform: uppercase;
   color: #222;
   margin: 0;
@@ -569,12 +589,14 @@ body {
   font-size: 14px;
   font-weight: 400;
   color: #777;
+  letter-spacing: -0.5px;
 }
 .projects-wrapper {
   position: relative;
 }
 .project {
   margin-top: 75px;
+  max-width: 570px;
 }
 @media (max-width: 767px) {
   .project {
@@ -607,6 +629,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.8;
+  letter-spacing: -0.5px;
   text-transform: uppercase;
   color: #222;
 }
@@ -614,9 +637,12 @@ body {
   font-family: "Roboto Slab", serif;
   font-size: 14px;
   font-weight: 400;
+  letter-spacing: -0.5px;
   color: #777;
 }
 .project__benefit-block {
+  margin: 0;
+  padding: 0;
   margin-top: 20px;
   margin-bottom: 28px;
 }
@@ -630,6 +656,19 @@ body {
   display: flex;
   align-items: center;
   margin-top: 13px;
+  list-style-type: none;
+}
+.project__benefit-block-item--basket::before {
+  content: url(../img/icons/icon-basket.png);
+  margin-right: 15px;
+}
+.project__benefit-block-item--laptop::before {
+  content: url(../img/icons/icon-laptop.png);
+  margin-right: 15px;
+}
+.project__benefit-block-item--lock::before {
+  content: url(../img/icons/icon-lock.png);
+  margin-right: 15px;
 }
 .project__benefit-block-item-image {
   margin-right: 15px;
@@ -647,7 +686,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.8;
-  text-transform: uppercase;
+  letter-spacing: -0.5px;
   color: #222;
 }
 @media (max-width: 767px) {
@@ -659,11 +698,12 @@ body {
   font-family: "Roboto Slab", serif;
   font-size: 14px;
   font-weight: 400;
+  letter-spacing: -0.5px;
   color: #777;
 }
 .relax__wrapper {
   display: flex;
-  height: 620px;
+  min-height: 620px;
   background-color: #e9e9e9;
   position: relative;
   justify-content: flex-end;
@@ -676,9 +716,9 @@ body {
 .relax__image {
   z-index: 1;
   position: absolute;
-  top: 101px;
+  top: 50%;
   left: 30%;
-  transform: translateX(-193px);
+  transform: translate(-50%, -50%);
 }
 @media (max-width: 767px) {
   .relax__image {
@@ -703,6 +743,8 @@ body {
 .relax__content-wrapper {
   padding-left: 100px;
   padding-top: 88px;
+  padding-bottom: 100px;
+  max-width: 800px;
   position: relative;
 }
 @media (max-width: 992px) {
@@ -735,34 +777,43 @@ body {
   margin: 0;
   padding: 0;
 }
+.relax__content-title span {
+  color: #7cc576;
+}
 @media (max-width: 767px) {
   .relax__content-title {
     font-size: 32px;
   }
 }
-.relax__content-title--latter-color {
-  color: #7cc576;
-}
 .relax__content-description {
   font-family: "Roboto Slab", serif;
   font-size: 16px;
   font-weight: 400;
+  letter-spacing: -0.5px;
   color: #cccccc;
   margin: 0;
   padding: 0;
   margin-top: 29px;
   margin-bottom: 23px;
+  max-width: 520px;
 }
 @media (max-width: 767px) {
   .relax__content-description {
     font-size: 15px;
   }
 }
+.relax__bullets {
+  margin: 0;
+  padding: 0;
+}
 .relax__content-bullets {
+  background-image: url(../img/icons/checkmark.png);
+  background-repeat: no-repeat;
   color: #fff;
   display: flex;
   align-items: center;
   margin-top: 10px;
+  padding-left: 52px;
 }
 .relax__content-bullets-image {
   padding-right: 20px;
@@ -772,6 +823,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #cccccc;
+  line-height: 2;
+  letter-spacing: -0.5px;
 }
 .value__wrapper {
   background-color: #f9f9f9;
@@ -780,6 +833,7 @@ body {
   padding: 0;
 }
 .value-block__image {
+  position: relative;
   margin-top: 84px;
   margin-bottom: 20px;
 }
@@ -788,12 +842,26 @@ body {
     margin-top: 45px;
   }
 }
+#line1::after,
+#line2::after {
+  content: url(../img/icons/line.svg);
+  position: absolute;
+  top: 32px;
+  left: 223px;
+}
+@media (max-width: 1200px) {
+  #line1::after,
+  #line2::after {
+    display: none;
+  }
+}
 .value-block__title {
   font-family: "Montserrat", sans-serif;
   color: #222;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.8;
+  letter-spacing: -0.5px;
   text-transform: uppercase;
   margin-bottom: 6px;
 }
@@ -801,6 +869,7 @@ body {
   font-family: "Roboto Slab", serif;
   font-size: 14px;
   font-weight: 400;
+  letter-spacing: -0.5px;
   color: #777;
 }
 .contact__wrapper {
@@ -877,6 +946,10 @@ body {
   line-height: 1.2;
   margin-bottom: 20px;
 }
+.footer__item {
+  margin: 0;
+  padding: 0;
+}
 .footer__item-location {
   display: flex;
 }
@@ -886,16 +959,23 @@ body {
   height: 31px;
   margin-top: 5px;
 }
+.footer__item-text-contact {
+  font-family: "Roboto Slab", serif;
+  color: #ececec;
+  font-size: 16px;
+}
 .footer__item-text {
   font-family: "Roboto Slab", serif;
   color: #ececec;
   font-size: 16px;
 }
-.footer__item-text--hover:hover {
+.footer__item-text:hover,
+.footer__item-text:focus {
   color: #7cc576;
   text-decoration: none;
   transition: all 0.2s ease-in;
   cursor: pointer;
+  outline: none;
 }
 .footer__item-text--l-h-22px {
   line-height: 22px;
@@ -1013,6 +1093,7 @@ body {
   margin-right: 0;
 }
 .copyright__social-icon-twitter {
+  position: relative;
   background-color: #222;
   width: 41px;
   height: 41px;
@@ -1023,10 +1104,17 @@ body {
   padding-top: 12px;
   padding-left: 11px;
 }
+.copyright__social-icon-twitter::before {
+  content: url(../img/icons/twitter.png);
+  position: absolute;
+  top: 12px;
+  left: 11px;
+}
 .copyright__social-icon-twitter:hover {
   background-color: #00aced;
 }
 .copyright__social-icon-facebook {
+  position: relative;
   background-color: #222;
   width: 41px;
   height: 41px;
@@ -1037,10 +1125,17 @@ body {
   padding-top: 10px;
   padding-left: 15px;
 }
+.copyright__social-icon-facebook::before {
+  content: url(../img/icons/facebook.png);
+  position: absolute;
+  top: 11px;
+  left: 15px;
+}
 .copyright__social-icon-facebook:hover {
   background-color: #3b5998;
 }
 .copyright__social-icon-pinterest {
+  position: relative;
   background-color: #222;
   width: 41px;
   height: 41px;
@@ -1051,10 +1146,17 @@ body {
   padding-top: 10px;
   padding-left: 12px;
 }
+.copyright__social-icon-pinterest::before {
+  content: url(../img/icons/pinterest.png);
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
 .copyright__social-icon-pinterest:hover {
   background-color: #cb2028;
 }
 .copyright__social-icon-google {
+  position: relative;
   background-color: #222;
   width: 41px;
   height: 41px;
@@ -1064,6 +1166,12 @@ body {
 .copyright__social-icon-google img {
   padding-top: 12px;
   padding-left: 13px;
+}
+.copyright__social-icon-google::before {
+  content: url(../img/icons/google.png);
+  position: absolute;
+  top: 12px;
+  left: 14px;
 }
 .copyright__social-icon-google:hover {
   background-color: #da2713;

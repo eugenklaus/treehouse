@@ -12,10 +12,12 @@
     text-transform: uppercase;
     transition: all 0.2s ease-in;
 
-    &:hover {
+    &:hover,
+    &:focus {
         text-decoration: none;
         color: #222;
         background-color: #fff;
+        outline: none;
     }
 
     @media (max-width: 767px) {
@@ -46,16 +48,28 @@
         position: absolute;
         bottom: 7px;
         right: -20px;
-
-        &:hover {
-            background-image: url(../img/icons/arrow-right-black.svg);
-            background-repeat: no-repeat;
-        }
+        
+        transition: all 0.2s ease-in;
     }
 
-    &:hover {
+    &:hover, :focus {
         text-decoration: none;
         color: #222;
+        outline: none;
+
+        &::after {
+            content: "";
+            background-image: url(../img/icons/arrow-right-black.svg);
+            width: 14px;
+            height: 11px;
+
+            position: absolute;
+            bottom: 7px;
+            right: -20px;
+
+            
+
+        }
     }
 }
 
@@ -75,11 +89,14 @@
     margin-top: 24px;
     padding: 10px 27px;
 
-    &:hover {
+    &:hover,
+    &:focus {
         text-decoration: none;
         color: #7cc576;
         background-color: #fff;
         border-radius: 4px;
+
+        outline: none;
 
         padding: 10px 27px;
     }

@@ -24,6 +24,8 @@
 }
 
 .footer__item {
+    margin: 0;
+    padding: 0;
 }
 
 .footer__item-location {
@@ -38,18 +40,23 @@
     }
 }
 
+.footer__item-text-contact {
+    font-family: "Roboto Slab", serif;
+    color: #ececec;
+    font-size: 16px;
+}
+
 .footer__item-text {
     font-family: "Roboto Slab", serif;
     color: #ececec;
     font-size: 16px;
 
-    &--hover {
-        &:hover {
-            color: #7cc576;
-            text-decoration: none;
-            transition: all 0.2s ease-in;
-            cursor: pointer;
-        }
+    &:hover, &:focus {
+        color: #7cc576;
+        text-decoration: none;
+        transition: all 0.2s ease-in;
+        cursor: pointer;
+        outline: none;
     }
 
     &--l-h-22px {
@@ -142,7 +149,4 @@
     font-size: 16px;
     font-weight: 700;
     letter-spacing: normal;
-}
-
-.footer__item-latest-time {
 }

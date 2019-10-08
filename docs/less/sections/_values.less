@@ -4,15 +4,38 @@
 
 .value__blocks {
     padding: 0;
-    
 }
 
 .value-block__image {
+    position: relative;
     margin-top: 84px;
     margin-bottom: 20px;
 
+    // &::after {
+    //     content: url(../img/icons/line.svg);
+    //     position: absolute;
+    //     top: 32px;
+    //     left: 220px;
+    // }
+
     @media (max-width: 767px) {
         margin-top: 45px;
+    }
+}
+
+#line1,
+#line2 {
+    &::after {
+        content: url(../img/icons/line.svg);
+        position: absolute;
+        top: 32px;
+        left: 223px;
+    }
+
+    @media (max-width: 1200px) {
+        &::after {
+            display: none;
+        }
     }
 }
 
@@ -22,6 +45,7 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 1.8;
+    letter-spacing: -0.5px;
     text-transform: uppercase;
 
     margin-bottom: 6px;
@@ -31,5 +55,6 @@
     font-family: "Roboto Slab", serif;
     font-size: 14px;
     font-weight: 400;
+    letter-spacing: -0.5px;
     color: #777;
 }
